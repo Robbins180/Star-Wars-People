@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body{
+  margin: 0;
+  background: lightgrey;
+}
+
+.title {
+  color: blue;
+  text-align: center;
+  font-size: 300%;
+}
+
+ .game-info-container {
+   grid-column: 1 / -1;
+   grid-row: auto;
+   display: flex;
+   justify-content: space-between;
+ }
+
+.game-info {
+  color: purple;
+  font-size: 200%;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin: 50px;
+  perspective: 500px;
+
+}
+
+.card {
+  position: relative;
+  background-color: black;
+  height: 175px;
+  width: 125px;
+  transition:
+}
+
+.start {
+  postion: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: black;
+}
+/* .start.visable {
+  display: flex;
+  animation: overlay-grow 300ms forwards;
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgb(148, 149, 148);
+    font-size: 0;
+  } to {
+    background-color: rgb(148, 149, 148);
+    font-size: 1000%;
+  }
+} */
+
+.card:hover .backside {
+  transform: rotateY(-180deg);
+}
+
+/* .card:hover .frontside {
+  transform: rotateY(-0deg);
+} */
+
+
+
+.bs {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.fs {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
