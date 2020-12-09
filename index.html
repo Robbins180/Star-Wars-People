@@ -6,124 +6,32 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-      <h1 class ='title'>Star Wars Memory Game</h1>
-      <div class='Start'>Click to Start</div>
-      <div class ='game-container'>
-        <div class ='game-info-container'>
-          <div class='game-info'>
-            Time <span id='time-left'>100</span>
-          </div>
-          <div class='game-info'>
-            Flip <span id='flips'>0</span>
-          </div>
-        </div>
+      <h1 class='header'>Star Wars People Modal</h1>
+      <button id='startBtn'>Start</button>
+      <div id='modal'>
+        <div id='modal-textbox'>
+          <a id='close' href="#">Close</a>
+          <h1 class ='title'>Choose your person</h1>
+         <form>
+             <input id='searchbar' type="text" placeholder='Enter a number & "/"'>
+             <input id='searchbutton' type="submit" value='Search'>
+         </form>
+           <dl>
+             <dt>Name:</dt>
+             <dd id='name'></dd>
 
-        <div class='card'>
-          <div class='frontside'>
-            <img class='fs' src="./imgs/luke-skywalker.png" alt="front side">
-          </div>
-          <div class='backside'>
-            <img class='bs' src="./imgs/card-back.jpeg" alt="back side">
-          </div>
-        </div>
+             <dt>Height:</dt>
+             <dd id='height'></dd>
 
-        <div class='card'>
-          <div class='frontside'>
-            <img class='fs' src="./imgs/luke-skywalker.png" alt="front side">
-          </div>
-          <div class='backside'>
-            <img class='bs' src="./imgs/card-back.jpeg" alt="back side">
-          </div>
-        </div>
+             <dt>Mass:</dt>
+             <dd id='mass'></dd>
 
-        <div class='card'>
-          <div class='frontside'>
-            <img class='fs' src="./imgs/c3po.png" alt="front side">
-          </div>
-          <div class='backside'>
-            <img class='bs' src="./imgs/card-back.jpeg" alt="back side">
-          </div>
-        </div>
+             <dt>Hair_color:</dt>
+             <dd id='hair_color'></dd>
 
-        <div class='card'>
-          <div class='frontside'>
-            <img class='fs' src="./imgs/c3po.png" alt="front side">
-          </div>
-          <div class='backside'>
-            <img class='bs' src="./imgs/card-back.jpeg" alt="back side">
-          </div>
-        </div>
-
-        <div class='card'>
-          <div class='frontside'>
-            <img class='fs' src="./imgs/luke-skywalker.png" alt="front side">
-          </div>
-          <div class='backside'>
-            <img class='bs' src="./imgs/card-back.jpeg" alt="back side">
-          </div>
-        </div>
-
-        <div class='card'>
-          <div class='frontside'>
-            <img class='fs' src="./imgs/luke-skywalker.png" alt="front side">
-          </div>
-          <div class='backside'>
-            <img class='bs' src="./imgs/card-back.jpeg" alt="back side">
-          </div>
-        </div>
-
-        <div class='card'>
-          <div class='frontside'>
-            <img class='fs' src="./imgs/luke-skywalker.png" alt="front side">
-          </div>
-          <div class='backside'>
-            <img class='bs' src="./imgs/card-back.jpeg" alt="back side">
-          </div>
-        </div>
-
-        <div class='card'>
-          <div class='frontside'>
-            <img class='fs' src="./imgs/luke-skywalker.png" alt="front side">
-          </div>
-          <div class='backside'>
-            <img class='bs' src="./imgs/card-back.jpeg" alt="back side">
-          </div>
-        </div>
-
-        <div class='card'>
-          <div class='frontside'>
-            <img class='fs' src="./imgs/luke-skywalker.png" alt="front side">
-          </div>
-          <div class='backside'>
-            <img class='bs' src="./imgs/card-back.jpeg" alt="back side">
-          </div>
-        </div>
-
-        <div class='card'>
-          <div class='frontside'>
-            <img class='fs' src="./imgs/luke-skywalker.png" alt="front side">
-          </div>
-          <div class='backside'>
-            <img class='bs' src="./imgs/card-back.jpeg" alt="back side">
-          </div>
-        </div>
-
-        <div class='card'>
-          <div class='frontside'>
-            <img class='fs' src="./imgs/luke-skywalker.png" alt="front side">
-          </div>
-          <div class='backside'>
-            <img class='bs' src="./imgs/card-back.jpeg" alt="back side">
-          </div>
-        </div>
-
-        <div class='card'>
-          <div class='frontside'>
-            <img class='fs' src="./imgs/luke-skywalker.png" alt="front side">
-          </div>
-          <div class='backside'>
-            <img class='bs' src="./imgs/card-back.jpeg" alt="back side">
-          </div>
+             <dt>Gender:</dt>
+             <dd id='gender'></dd>
+           </dl>
         </div>
       </div>
 

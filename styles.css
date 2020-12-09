@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+
 
 html {
   min-height: 100vh;
@@ -8,91 +6,106 @@ html {
 
 body{
   margin: 0;
-  background: lightgrey;
+  background:;
+  background-position: center;
+  text-align: center;
+  margin-top: 75px;
+  background-image: url('imgs/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  color: white;
+  font-size: 3em;
+}
+
+#startBtn {
+  height: 100px;
+  width: 300px;
+  /* margin-right: 100px; */
+  position: relative;
+  border: 6px solid black;
+  padding: 20px;
+  font-size: 40px;
+  font-family: 'ariel', 'sans seriff';
+  cursor: pointer;
+  transition: .8s;
+  color: white;
+  box-shadow: inset 0 0 0 0 #02E5B8;
+  background: linear-gradient(90deg, #1D08A8, #02E5B8);
+  transition: ease-in-out .5s;
+
+}
+
+#startBtn:hover {
+  box-shadow: inset 300px 0 0 0 #02E5B8;
+
+}
+
+
+#modal {
+  background-color: rgba(0,0,0,.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+  display: none;
+}
+
+#modal-textbox {
+  background-image: url('imgs/modal-background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 550px;
+  border-radius: 2px;
+  margin: 150px auto;
+  border: 10px solid black;
+}
+
+#close {
+  font-size: 150%;
+  font-family: monaco;
+  color: black;
 }
 
 .title {
-  color: blue;
+  color: darkblue;
   text-align: center;
   font-size: 300%;
+  font-family: copperplate;
 }
 
- .game-info-container {
-   grid-column: 1 / -1;
-   grid-row: auto;
-   display: flex;
-   justify-content: space-between;
- }
-
-.game-info {
-  color: purple;
-  font-size: 200%;
+#searchbar {
+  border: 2px solid black;
+  height: 25px;
 }
 
-.game-container {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
-  margin: 50px;
-  perspective: 500px;
+#searchbutton {
+  border: 2px solid black;
+  height: 30px;
 
 }
 
-.card {
-  position: relative;
-  background-color: black;
-  height: 175px;
-  width: 125px;
-  transition:
-}
 
-.start {
-  postion: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  display: flex;
+form {
+  text-align: center;
   justify-content: center;
-  align-items: center;
-  z-index: 100;
-  color: black;
-}
-/* .start.visable {
-  display: flex;
-  animation: overlay-grow 300ms forwards;
+  border: : 3px solid black;
+  height: 25px;
 }
 
-@keyframes overlay-grow {
-  from {
-    background-color: rgb(148, 149, 148);
-    font-size: 0;
-  } to {
-    background-color: rgb(148, 149, 148);
-    font-size: 1000%;
-  }
-} */
+dl {
+  text-align: center;
+  justify-content: center;
+  font-size: 100%;
+  font-family: monaco ;
+  color: darkblue;
 
-.card:hover .backside {
-  transform: rotateY(-180deg);
-}
-
-/* .card:hover .frontside {
-  transform: rotateY(-0deg);
-} */
-
-
-
-.bs {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: flex;
-}
-
-.fs {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: flex;
 }
