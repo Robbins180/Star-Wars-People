@@ -1,6 +1,12 @@
 # Star-wars-People-modal
 
 Star Wars People Modal is an app made for searching for different characters/people in the star wars universe.
+This app is a modal w/ ajax
+
+https://github.com/Robbins180/Star-Wars-People
+
+
+To begin:
 
 Click the START button on the main screen to begin.
 
