@@ -18,17 +18,19 @@ body{
 .header {
   color: white;
   font-size: 3em;
+  font-family: copperplate;
 }
 
 #startBtn {
+
   height: 100px;
   width: 300px;
   /* margin-right: 100px; */
   position: relative;
   border: 6px solid black;
   padding: 20px;
-  font-size: 40px;
-  font-family: 'ariel', 'sans seriff';
+  font-size: 50px;
+  font-family: arial;
   cursor: pointer;
   transition: .8s;
   color: white;
@@ -45,7 +47,7 @@ body{
 
 
 #modal {
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0,0,0,.6);
   position: fixed;
   top: 0;
   left: 0;
@@ -90,7 +92,6 @@ body{
 #searchbutton {
   border: 2px solid black;
   height: 30px;
-
 }
 
 
@@ -107,5 +108,4 @@ dl {
   font-size: 100%;
   font-family: monaco ;
   color: darkblue;
-
 }
